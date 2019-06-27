@@ -79,6 +79,7 @@ uint32_t processQwerty(bool lookup) {
     P( FUNCT | RG,         SEND(KC_F10));
     P( FUNCT | RB,         SEND(KC_F11));
     P( FUNCT | RS,         SEND(KC_F12));
+    P( FUNCT | ST3,        SEND(KC_PSCR));
 
     // Movement Layer
     P( MOVE | RF,     SEND(KC_LEFT));
@@ -87,6 +88,8 @@ uint32_t processQwerty(bool lookup) {
     P( MOVE | RT,     SEND(KC_RIGHT));
     P( MOVE | ST3,    SEND(KC_PGUP));
     P( MOVE | ST4,    SEND(KC_PGDN));
+    P( MOVE | RR,     SEND(KC_HOME));
+    P( MOVE | BB,     SEND(KC_END));
 
     // Media Layer
     P( MEDIA | RF,    SEND(KC_MPRV));
@@ -169,6 +172,7 @@ uint32_t processQwerty(bool lookup) {
     P( PWR | RE,           SEND(KC_SCLN));
     P( PWR | RU,           SEND(KC_BSLS));
     P( PWR | LNO,          SEND(KC_BSLS));
+    P( PWR | RNO,          SEND(KC_DEL));
 
     // Letters
     P( LSU | LSD,    SEND(KC_A));
